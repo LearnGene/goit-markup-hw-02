@@ -1,0 +1,104 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Typography */
+body{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+/* Header */
+.header{
+    height: 72px ;
+    border-bottom: 1px solid #E7E9FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header a {
+    text-decoration: none;
+}
+.header ul{
+    list-style: none;
+}
+.header nav{
+    display: flex;
+    align-items: center;
+}
+.contact ul{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+/* Navigation */
+.nav-links{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.nav-menu ul{
+    display: flex;
+    column-gap: 40px
+}
+
+.nav-menu a:hover {
+    position: relative;
+    color:#404BBF;
+}
+.nav-menu a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color:#404BBF;
+    transform-origin: top;
+    transition: transform 0.25s ease-out;
+}
+.nav-menu a:hover:after {
+    transform: scaleX(1);
+    transform-origin:top;
+}
+
+.contact a:hover{
+    animation-timing-function: ease-out;
+    animation-duration: 500ms;
+    color: #404BBF;
+}
+
+
+/* Elements */
+/* Interactive Elements */
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: #2E2F42;
+    height: 312px;
+    padding-left: 10%;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    color: white;
+}
+.footer .branding{
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+
+}
